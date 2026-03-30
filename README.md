@@ -1,14 +1,9 @@
 <div align="center">
 
-<!-- Hero Image Placeholder: replace with generated image -->
-<img src="https://img.shields.io/badge/PROJECT-HERO-IMAGE-GENERATING-lightgrey?style=for-the-badge" width="600" alt="hero">
-
-<br/>
-
 <img src="https://img.shields.io/badge/Language-Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-<img src="https://img.shields.io/badge/License-GPL-3.0-4CC61E?style=flat-square&logo=osi&logoColor=white" alt="License">
+<img src="https://img.shields.io/badge/License-GPL--3.0-4CC61E?style=flat-square&logo=osi&logoColor=white" alt="License">
 <img src="https://img.shields.io/badge/Version-0.1.0-3B82F6?style=flat-square" alt="Version">
-<img src="https://img.shields.io/badge/PRs-Welcome-3B82F6?style=flat-square" alt="PRs Welcome">
+<img src="https://img.shields.io/badge/PRs_Welcome-3B82F6?style=flat-square" alt="PRs Welcome">
 
 <br/>
 <br/>
