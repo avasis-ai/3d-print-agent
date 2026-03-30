@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "3d-print-agent"
+version = "0.1.0"
+description = "The agent that monitors and corrects 3D prints in real-time"
+readme = "README.md"
+license = { text = "GPL-3.0" }
+authors = [
+    { name = "Avasis AI", email = "contact@avasis.ai" }
+]
+maintainers = [
+    { name = "Avasis AI", email = "contact@avasis.ai" }
+]
+keywords = [
+    "3d-printing",
+    "computer-vision",
+    "octoprint",
+    "gcode",
+    "failure-detection",
+    "real-time-monitoring"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Manufacturing",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Software Development :: Libraries",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "opencv-python>=4.8",
+    "pyyaml>=6.0",
+    "httpx>=0.25",
+]
+
+[project.urls]
+Homepage = "https://github.com/avasis-ai/3d-print-agent"
+Documentation = "https://github.com/avasis-ai/3d-print-agent#readme"
+Repository = "https://github.com/avasis-ai/3d-print-agent.git"
+Issues = "https://github.com/avasis-ai/3d-print-agent/issues"
+
+[project.scripts]
+3d-print-agent = "3d_print_agent.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/3d_print_agent"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v --strict-markers"
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
